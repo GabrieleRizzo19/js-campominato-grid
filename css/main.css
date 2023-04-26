@@ -1,0 +1,16 @@
+main{
+    background-color: aquamarine;
+}
+
+#my-grid{
+    margin: 3em auto;
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid black;
+}
+
+.my-square{
+    width: calc( 100% / 10);
+    height: calc( 100% / 10);
+    border: 0.5px solid black;
+}
