@@ -15,10 +15,11 @@
 main{
     height: calc( var(--fix-vh) * 100 - var(--headerFooterHeight) * 2 );
     background-color: aquamarine;
+    overflow-y: auto;
 }
 
 #my-grid{
-    margin: 3em auto;
+    margin: auto;
     width: var(--10x10GridSize);
     height: var(--10x10GridSize);
     border: 1px solid black;
