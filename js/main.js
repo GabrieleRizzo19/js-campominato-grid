@@ -19,25 +19,22 @@ playButton.addEventListener("click", function(){
 function createGrid(difficulty){
 
     let numberOfSquare = 100;
-    let size = "hard";
     grid.style.height = "var(--10x10GridSize)";
     grid.style.width = "var(--10x10GridSize)";
 
     if(difficulty == "medium"){
         numberOfSquare = 81;
-        size = "medium";
         grid.style.height = "var(--9x9GridSize)";
         grid.style.width = "var(--9x9GridSize)";
     }else if(difficulty == "easy"){
         numberOfSquare = 49;
-        size = "easy";
         grid.style.height = "var(--7x7GridSize)";
         grid.style.width = "var(--7x7GridSize)";
     }
     for( let i=1; i <= numberOfSquare; i++ ){
         const newSquare = document.createElement("div");
         newSquare.classList.add("my-square");
-        newSquare.classList.add(size);
+        newSquare.classList.add(difficulty);
         newSquare.innerHTML = i;
         newSquare.addEventListener("click", function(){
             this.classList.toggle("bg-warning");
