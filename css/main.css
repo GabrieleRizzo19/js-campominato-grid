@@ -1,4 +1,5 @@
 :root{
+    --headerFooterHeight: 80px;
     --10x10GridSize: 1000px;
     --9x9GridSize: 900px;
     --7x7GridSize: 700px;
@@ -7,8 +8,12 @@
     --7x7SquareOnRow: 7;
 }
 
+#header-wrapper, #footer-wrapper{
+    height: var(--headerFooterHeight);
+}
 
 main{
+    height: calc( var(--fix-vh) * 100 - var(--headerFooterHeight) * 2 );
     background-color: aquamarine;
 }
 
@@ -19,7 +24,7 @@ main{
     border: 1px solid black;
 }
 
-#my-grid h1{
+#message-click-to-play{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
