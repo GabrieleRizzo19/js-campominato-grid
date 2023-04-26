@@ -13,15 +13,23 @@
         <header>
             <div id="header-wrapper" class="container d-flex justify-content-between align-items-center">
                 <h1>CAMPO MINATO</h1>
-                <button class="btn btn-outline-dark">Play</button>
+                <div>
+                    <label for="difficulty">Difficoltà: </label>
+                    <select name="difficulty" id="difficulty" class="me-4">
+                        <option selected value="hard">Difficile</option>
+                        <option value="medium">Medio</option>
+                        <option value="easy">Facile</option>
+                    </select>
+                    <button id="play-button" class="btn btn-outline-dark">Play</button>
+                </div>
             </div>
         </header>
     
         <main>
             <div id="main-wrapper" class="container d-flex justify-content-center">
-                <div id="my-grid" class="d-flex justify-content-start align-content-start flex-wrap">
+                <div id="my-grid" class="position-relative d-flex justify-content-start align-content-start flex-wrap">
                     <!-- <div class="my-square"></div> -->
-
+                        <h1 id="message-click-to-play" class="position-absolute">CLICCA PLAY PER GIOCARE</h1>
                 </div>
             </div>
         </main>
