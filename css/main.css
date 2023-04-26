@@ -1,16 +1,29 @@
+:root{
+    --10x10GridSize: 1000px;
+    --9x9GridSize: 900px;
+    --7x7GridSize: 700px;
+    --10x10SquareOnRow: 10;
+    --9x9SquareOnRow: 9;
+    --7x7SquareOnRow: 7;
+}
+
+
 main{
     background-color: aquamarine;
 }
 
 #my-grid{
     margin: 3em auto;
-    width: 1000px;
-    height: 1000px;
+    width: var(--10x10GridSize);
+    height: var(--10x10GridSize);
     border: 1px solid black;
 }
 
 .my-square{
-    width: calc( 100% / 10);
-    height: calc( 100% / 10);
+    width: calc( 100% / var(--10x10SquareOnRow) );
+    height: calc( 100% / var(--10x10SquareOnRow));
     border: 0.5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
